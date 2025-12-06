@@ -1,5 +1,5 @@
-import { cars } from "../../data/cars";
-import CarCard from "../CarCard";
+import { cars } from "../data/cars";
+import CarCard from "../components/CarCard";
 
 export default function Home() {
     return (
