@@ -4,7 +4,7 @@ import CarCard from "../../components/CarCard";
 export default function Home() {
     return (
         <div className="container mt-4">
-            <h2 className="mb-4">
+            <h2 className="mb-4 text-center">
                 Automobili na prodaju
             </h2>
             <div className="row">
