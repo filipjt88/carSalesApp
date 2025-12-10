@@ -1,7 +1,7 @@
 export const cars = [
     {
         id: 1,
-        brend: "BMW",
+        brand: "BMW",
         model: "530d",
         year: "2018",
         km: "210000",
@@ -10,7 +10,7 @@ export const cars = [
     },
     {
         id: 2,
-        brend: "Audi",
+        brand: "Audi",
         model: "A4",
         year: "2016",
         km: "170000",
@@ -19,7 +19,7 @@ export const cars = [
     },
       {
         id: 3,
-        brend: "Mercedes-Benz",
+        brand: "Mercedes-Benz",
         model: "E class",
         year: "2019",
         km: "110000",
@@ -28,7 +28,7 @@ export const cars = [
     },
     {
         id: 4,
-        brend: "Opel",
+        brand: "Opel",
         model: "Insignia",
         year: "2022",
         km: "97000",
@@ -37,7 +37,7 @@ export const cars = [
     },
     {
         id: 5,
-        brend: "Porsche",
+        brand: "Porsche",
         model: "Carrera",
         year: "2023",
         km: "74000",
@@ -46,7 +46,7 @@ export const cars = [
     },
     {
         id: 6,
-        brend: "Audi",
+        brand: "Audi",
         model: "Q8",
         year: "2018",
         km: "250000",
