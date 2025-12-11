@@ -27,6 +27,15 @@ export default function CarDetails() {
         <div className="container mt-4">
             <div className="row">
                 {/* {/*  LEVAA: carousel * /} */}
+                <div className="col-lg-8">
+                    <div className="card mb-3">
+                        <div className="card-body p-2">
+                            <div className="position-relative">
+                                <img src={car.images[activeIndex]} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
