@@ -23,18 +23,18 @@ export default function CarDetails() {
     const goTo = (idx) => setActiveIndex(idx);
 
     return (
-         <div className="container mt-4">
+         <div className="container mt-5">
       <div className="row">
         {/* LEVAA: carousel */}
         <div className="col-lg-8">
           <div className="card mb-3">
-            <div className="card-body p-2">
+            <div className="card-body p-3">
               <div className="position-relative">
                 <img
                   src={car.images[activeIndex]}
                   alt={`${car.brand} ${car.model}`}
                   className="img-fluid w-100 rounded"
-                  style={{ maxHeight: "600px", objectFit: "cover" }}
+                  style={{ maxHeight: "400px", minWidth:"100%", objectFit: "cover" }}
                 />
                 <button className="btn btn-light position-absolute top-50 start-0 translate-middle-y" style={{ zIndex: 5 }} onClick={onPrev}>
                   ‹

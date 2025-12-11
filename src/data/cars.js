@@ -20,7 +20,13 @@ export const cars = [
         image: "https://media.drive.com.au/obj/tx_q:70,rs:auto:1920:1080:1/caradvice/private/fe905ab05f2ec68b0c5e1201903d9bd0",
         city: "Novi Sad",
         description: "Odličan enterijer, servisiran kod ovlašćenog, malo vožen van grada.",
-        images:[]
+        images:[
+            "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/audi-a4-2016-(2)_1.jpg",
+            "https://imgd.aeplcdn.com/664x374/cw/ec/22613/Audi-A4-Right-Rear-Three-Quarter-171418.jpg?wm=0&q=80",
+            "https://www.forcegt.com/wp-content/uploads/2016/08/2016-audi-a4-front-quarter.jpg",
+            "https://i0.wp.com/changinglanes.ie/wp-content/uploads/2016/02/4650-1.jpg?resize=840%2C560&ssl=1",
+            "https://static2.3birdsmarketing.com/Clients/3BIRDSMARKETING/2015AudiA4Hero.jpg",
+        ]
     },
       {
         id: 3,
@@ -31,7 +37,13 @@ export const cars = [
         price: "45.000",
         image: "https://media.ed.edmunds-media.com/mercedes-benz/e-class/2019/oem/2019_mercedes-benz_e-class_sedan_amg-e-63-s_fq_oem_8_1600.jpg",
         city: "Nis",
-        images:[]
+        images:[
+            "https://di-uploads-pod5.dealerinspire.com/waltersmercedesbenz/uploads/2016/04/2016-mb-e-class-3.jpg",
+            "https://i.ytimg.com/vi/RfaIplOvTLo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAgAwkb0m4HJ3EC4yqacQpdCiFrjw",
+            "https://img.indianautosblog.com/2016/01/2016-Mercedes-E-Class-Avantgarde-leaked.jpg",
+            "https://img.indianautosblog.com/2015/08/2016-Mercedes-E-Class-with-production-taillamps-rendering.jpg",
+            "https://preview-assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/3fd5f748-5955-4983-8cc5-1bd924f2997e/Mercedes%20E-Class%202022%20rear%20driving.jpg?w=1920&q=80&fm=webp&lossless=0"
+        ]
     },
     {
         id: 4,
