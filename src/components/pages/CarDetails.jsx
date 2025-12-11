@@ -6,7 +6,6 @@ export default function CarDetails() {
     const { id } = useParams();
     const cardId = Number(id);
     const car = cars.find(c => c.id === cardId);
-
     const [activeIndex, setActiveIndex] = useState(0);
 
     if (!car) {
