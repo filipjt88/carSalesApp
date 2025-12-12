@@ -16,7 +16,7 @@ export default function CarCard({ car }) {
                         Cena: {car.price} eura
                     </p>
                     <Link to={`/car/${car.id}`} className="btn btn-primary w-100">
-                    Detalji</Link>
+                    Detaljnije</Link>
                 </div>
             </div>
         </div>
