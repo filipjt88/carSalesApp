@@ -10,12 +10,12 @@ export const cars = [
         city: "Beograd",
         description: "Čist servisna istorija. Redovno održavan, registrovan do 06/2026.",
         images: [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://cdn.bigboytoyz.com/new-version/products/product/530d-m-sport-temp-2.jpg",
+            "https://imgd.aeplcdn.com/664x374/cw/ec/26911/BMW-5-Series-New-Exterior-89729.jpg?v=201711021421&q=80",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/2020_BMW_530d_M_Sport_facelift.jpg/640px-2020_BMW_530d_M_Sport_facelift.jpg",
+            "https://img.indianautosblog.com/crop/1200x675/2018/05/BMW-5-Series-530d-review-front-three-quarters.jpg",
+            "https://cdn-fastly.autoguide.com/media/2023/06/26/12899794/2018-bmw-5-series-review.jpg?size=720x845&nocrop=1",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gQnZHFhLQ73hSDMd5gUTUfak1R5D87_C6g&s",
         ]
     },
     {
