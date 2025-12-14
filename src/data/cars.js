@@ -138,12 +138,12 @@ export const cars = [
         image: "https://autorepublika.com/wp-content/uploads/2023/09/Article_175950_860_575.jpg",
         city: "Kragujevac",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://media.toyota.ca/content/dam/media-toyota/general/unassigned/20144/2022_Toyota_RAV4_XSE_001.jpg",
+            "https://dealerinspire-image-library-prod.s3.us-east-1.amazonaws.com/images/mijnsNTceAhXoDjuQnWBuGZYAkntbl9lGwq1vLiV.jpg",
+            "https://di-uploads-pod1.dealerinspire.com/lancastertoyota/uploads/2022/04/336524_RHV_MY22_0001_V001.jpg",
+            "https://i.ytimg.com/vi/ckulmmSQ7S0/maxresdefault.jpg",
+            "https://carsguide-res.cloudinary.com/image/upload/c_fit,h_841,w_1490,f_auto,t_cg_base/v1/editorial/2022-Toyota-RAV4-GXL-hybrid-awd-1200x800p-26.jpg",
+            "https://hips.hearstapps.com/hmg-prod/images/2021-toyota-rav4-trd-off-road-133-1626364959.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*",
         ]
     },
     {
@@ -156,12 +156,12 @@ export const cars = [
         image: "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/myaiys2mnwnvhmu4srda",
         city: "Zajecar",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://uploads.vw-mms.de/system/production/images/vwn/015/585/images/5676aa2c2061d19e9ed0134895822484b162f27e/DB2016AU00877_web_1600.jpg?1649150071",
+            "https://gcdn.polovniautomobili.com/user-images/thumbs/2718/27180099/13c44d99ed36-800x600.jpg",
+            "https://assets.adac.de/image/upload/v1/Autodatenbank/Fahrzeugbilder/im04742-1-vw-golf-vii-gtd.jpg",
+            "https://queenrentacar.rs/wp-content/uploads/2023/06/VW-Gof-7-img6.jpg",
+            "https://www.mojauto.rs/data/images/2025/10/26/09/biggest_20251020094345-1761466957.jpg",
+            "https://lh3.googleusercontent.com/proxy/728g7UH_gBsKb1HgQYjMTvwcC37RLQpdgHWyH5s25sP-QCWA4tjUUjuSW5lhIeqto02ZrBMIxmEp2EEUiCYTQKFP1IBTWiF4bEyEOdPYvq8P0e3yDbRlZNGQQkqoNHAVwfs",
         ]
     },
      {
@@ -174,12 +174,12 @@ export const cars = [
         image: "https://www.automagazin.rs/slike/vesti/20120211144010_photo_0.jpg",
         city: "Krusevac",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://www.automanijak.com/resources/images/variant/658/punto_4.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mNVpgpUiiDZlduuAEWC2dIH8I_43Qz026w&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2EAcmWnDHJlZbHSYi2GPjzmtMzR7Hmc-8Q&s",
+            "https://static.mojnoviauto.com/photos/normal/983108da3fe3a31a2165465f8bbb2e6f.jpg",
+            "https://www.otomoto.pl/news/uploads/2023/03/GettyImages-1189938625-1024x683.jpg",
+            "https://img4.auto.cz/moje.auto.cz/img/ic/cz/620/584c748e1c3c0.jpg"
         ]
     },
        {
