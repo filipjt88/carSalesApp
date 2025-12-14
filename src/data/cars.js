@@ -207,15 +207,15 @@ export const cars = [
         year: "2019",
         km: "102.000",
         price: "15.000",
-        image: "https://rynocars.com/wp-content/uploads/2023/12/Renault-Talisman-scaled.jpg",
+        image: "https://cdn.wheel-size.com/automobile/body/renault-talisman-2015-2020-1680165680.3703349.jpg",
         city: "Leskovac",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcGLcMv6UpoXiRVK_W7hebiPGLgYZZHBuEMg&s",
+            "https://www.njuskalo.hr/image-w920x690/auti/renault-talisman-1.6-dci-samo-40000-km-nov-auto-slika-208811462.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05uosEATW_qHh9liEhODF7kPgr1HDEQq3dg&s",
+            "https://www.user-manual.renault.com/sites/renault/files/styles/image_interactive/public/2025-10/R-DAM_1079056.jpg?itok=OqOOqJzp",
+            "https://thumbs.dreamstime.com/b/renault-talisman-paris-france-september-black-saloon-car-renault-talisman-city-street-248674338.jpg",
+            "https://img-pa.auto1.com/img77/fa/77fa535e3715a9e07f71bc5d2aeb0dcf/pa/BJ86975_53243595d9844684aac5c9b633782c04.jpg",
         ]
     },
 ];
