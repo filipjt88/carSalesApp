@@ -66,12 +66,12 @@ export const cars = [
         image: "https://nova.rs/wp-content/uploads/2022/07/22/1658485478-AKTUELNO-Opel-Insignia_GSi-2018-1600-02-1200x800.jpg",
         city: "Novi Pazar",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://parkers-images.bauersecure.com/wp-images/21883/cut-out/930x620/cutoutinsignia.jpg",
+            "https://www.topgear.com/sites/default/files/cars-car/image/2021/02/matthowell_insignia_148.jpg",
+            "https://c0.carsie.ie/d43864c90df075c94489ddbe4ca5ffe9347dd48d11a664b1867d9dbbbfb96453.jpg",
+            "https://c0.carsie.ie/d43864c90df075c94489ddbe4ca5ffe922235fd07d90462ad14ca2a2fa7da9b8.jpg",
+            "https://cdn.motor1.com/images/mgl/00y6m/s3/2017-opel-insignia-grand-sport.jpg",
+            "https://img12.img-bcg.eu/auto24/560/905/196787905.jpg",
         ]
     },
     {
@@ -84,12 +84,12 @@ export const cars = [
         image: "https://cdn.motor1.com/images/mgl/ZnKvO2/s1/2023-porsche-911-carrera-t-in-gulf-blue.jpg",
         city: "Beograd",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://monarchshowroom.com/wp-content/uploads/2023/07/438A9334-Enhanced-NR2-scaled.jpg",
+            "https://images-porsche.imgix.net/-/media/962D135C95E74E8897E80ED6875AE529_576C477FB3BC477D9EF3D8C8AAF98C41_CZ26W03OX0001-911-carrera-s-open-graph",
+            "https://cdn.elferspot.com/wp-content/uploads/2023/10/27/395969397_327472946594595_5220279250416108603_n.jpg?class=xl",
+            "https://file.kelleybluebookimages.com/kbb/base/evox/CP/50643/2023-Porsche-911-front_50643_032_2400x1800_U2.png",
+            "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/d9b636c2ec84ddc3bc7f2eb32861b39bdd5f9683/photos/3pNBDjqd-oVXOjx9hAv-(edit).jpg?t=169254879658",
+            "https://cdn.elferspot.com/wp-content/uploads/2024/03/27/porsche-992-gts-kaufen-05.jpeg?class=xl",
         ]
     },
     {
@@ -102,12 +102,12 @@ export const cars = [
         image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/2018_Audi_Q8.jpg",
         city: "Zrenjanin",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://media.drive.com.au/obj/tx_q:70,rs:auto:1920:1080:1/caradvice/private/34a7e671fb4adb2b128fb1f9bd2e3425",
+            "https://i.ytimg.com/vi/TL2nNI6qXmg/maxresdefault.jpg",
+            "https://cdn.prodajemauto.rs/photos/12088/xlarge/1764929337_4j3JNdk98d.webp?width=800&quality=80",
+            "https://autoblog.rs/gallery/108/abt%20q8%201.jpg",
+            "https://www.carsized.com/resources/audi/q8/d/2018/sl_280128139_audi-q8-2018-side-view_4x.png",
+            "https://i.ytimg.com/vi/Xw3cmSyPlLE/maxresdefault.jpg",
         ]
     },
     {
@@ -120,12 +120,12 @@ export const cars = [
         image: "https://gcdn.polovniautomobili.com/user-images/thumbs/2677/26772889/8472577bbe91-800x600.jpg",
         city: "Vrsac",
         images:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://i.ytimg.com/vi/J1sqgsbergw/maxresdefault.jpg",
+            "https://www.completecar.ie/img/testdrives/10491_large.jpg",
+            "https://www.topgear.com/sites/default/files/2023/10/2008_UK_2023_EXT14.jpg",
+            "https://www.automoli.com/common/vehicles/_assets/img/gallery/f130/peugeot-2008-ii.jpg",
+            "https://assets.motorpoint.co.uk/images/content/2008_UK_2023_EXT%20(8).jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjedxBXpis1fq7r14_69JPUOL2JxV2rE-ZjA&s",
         ]
     },
     {
