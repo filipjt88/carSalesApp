@@ -34,6 +34,7 @@ export const cars = [
             "https://www.forcegt.com/wp-content/uploads/2016/08/2016-audi-a4-front-quarter.jpg",
             "https://i0.wp.com/changinglanes.ie/wp-content/uploads/2016/02/4650-1.jpg?resize=840%2C560&ssl=1",
             "https://static2.3birdsmarketing.com/Clients/3BIRDSMARKETING/2015AudiA4Hero.jpg",
+            "https://www.forcegt.com/wp-content/uploads/2016/08/2016-audi-a4-front-quarter.jpg",
         ]
     },
       {
@@ -52,8 +53,6 @@ export const cars = [
             "https://img.indianautosblog.com/2015/08/2016-Mercedes-E-Class-with-production-taillamps-rendering.jpg",
             "https://preview-assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/3fd5f748-5955-4983-8cc5-1bd924f2997e/Mercedes%20E-Class%202022%20rear%20driving.jpg?w=1920&q=80&fm=webp&lossless=0",
             "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/caradvice/private/7c6073b02a925fa96f5204f675628bf2",
-            "https://media.drive.com.au/obj/tx_q:70,rs:auto:1920:1080:1/caradvice/private/122e514043ac2f98c94ac639ab4b51d4",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtTaXqh7uub37zO5uciOvfRqPrsFVzg4DbA&s"
         ]
     },
     {
