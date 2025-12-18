@@ -16,6 +16,8 @@ export const cars = [
             "https://img.indianautosblog.com/crop/1200x675/2018/05/BMW-5-Series-530d-review-front-three-quarters.jpg",
             "https://cdn-fastly.autoguide.com/media/2023/06/26/12899794/2018-bmw-5-series-review.jpg?size=720x845&nocrop=1",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gQnZHFhLQ73hSDMd5gUTUfak1R5D87_C6g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gQnZHFhLQ73hSDMd5gUTUfak1R5D87_C6g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gQnZHFhLQ73hSDMd5gUTUfak1R5D87_C6g&s",
         ]
     },
       {
@@ -33,6 +35,8 @@ export const cars = [
             "https://img.indianautosblog.com/2016/01/2016-Mercedes-E-Class-Avantgarde-leaked.jpg",
             "https://img.indianautosblog.com/2015/08/2016-Mercedes-E-Class-with-production-taillamps-rendering.jpg",
             "https://preview-assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/3fd5f748-5955-4983-8cc5-1bd924f2997e/Mercedes%20E-Class%202022%20rear%20driving.jpg?w=1920&q=80&fm=webp&lossless=0",
+            "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/caradvice/private/7c6073b02a925fa96f5204f675628bf2",
+            "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/caradvice/private/7c6073b02a925fa96f5204f675628bf2",
             "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/caradvice/private/7c6073b02a925fa96f5204f675628bf2",
         ]
     },
