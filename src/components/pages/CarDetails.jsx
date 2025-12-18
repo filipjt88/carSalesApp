@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function CarDetails() {
     const { id } = useParams();
     const cardId = Number(id);
-    const car = cars.find(c => c.id === cardId);
+    const car    = cars.find(c => c.id === cardId);
     const [activeIndex, setActiveIndex] = useState(0);
 
     if (!car) {
@@ -19,7 +19,7 @@ export default function CarDetails() {
 
     const onPrev = () => setActiveIndex((i) => (i - 1 + car.images.length));
     const onNext = () => setActiveIndex((i) => (i + 1) % car.images.length);
-    const goTo = (idx) => setActiveIndex(idx);
+    const goTo   = (idx) => setActiveIndex(idx);
 
     return (
          <div className="container mt-5">
@@ -81,7 +81,6 @@ export default function CarDetails() {
               <p className="mb-1"><strong>Lokacija:</strong> {car.city}</p>
               <hr />
               <p>{car.description}</p>
-
               <div className="d-grid">
                 <button className="btn btn-primary">Pozovi prodavca</button>
                 <button className="btn btn-outline-secondary mt-2">Pošalji poruku</button>
