@@ -18,25 +18,6 @@ export const cars = [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gQnZHFhLQ73hSDMd5gUTUfak1R5D87_C6g&s",
         ]
     },
-    {
-        id: 2,
-        brand: "Audi",
-        model: "A4",
-        year: "2016",
-        km: "170.000",
-        price: "25.000",
-        image: "https://media.drive.com.au/obj/tx_q:70,rs:auto:1920:1080:1/caradvice/private/fe905ab05f2ec68b0c5e1201903d9bd0",
-        city: "Novi Sad",
-        description: "Odličan enterijer, servisiran kod ovlašćenog, malo vožen van grada.",
-        images:[
-            "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/audi-a4-2016-(2)_1.jpg",
-            "https://imgd.aeplcdn.com/664x374/cw/ec/22613/Audi-A4-Right-Rear-Three-Quarter-171418.jpg?wm=0&q=80",
-            "https://www.forcegt.com/wp-content/uploads/2016/08/2016-audi-a4-front-quarter.jpg",
-            "https://i0.wp.com/changinglanes.ie/wp-content/uploads/2016/02/4650-1.jpg?resize=840%2C560&ssl=1",
-            "https://static2.3birdsmarketing.com/Clients/3BIRDSMARKETING/2015AudiA4Hero.jpg",
-            "https://www.forcegt.com/wp-content/uploads/2016/08/2016-audi-a4-front-quarter.jpg",
-        ]
-    },
       {
         id: 3,
         brand: "Mercedes-Benz",
@@ -216,5 +197,5 @@ export const cars = [
             "https://thumbs.dreamstime.com/b/renault-talisman-paris-france-september-black-saloon-car-renault-talisman-city-street-248674338.jpg",
             "https://img-pa.auto1.com/img77/fa/77fa535e3715a9e07f71bc5d2aeb0dcf/pa/BJ86975_53243595d9844684aac5c9b633782c04.jpg",
         ]
-    },
+    }
 ];
