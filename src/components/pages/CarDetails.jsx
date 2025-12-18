@@ -30,7 +30,7 @@ export default function CarDetails() {
             <div className="card-body p-3">
               <div className="position-relative">
                 <img
-                  src={car.image[activeIndex]}
+                  src={car.images[activeIndex]}
                   alt={`${car.brand} ${car.model}`}
                   className="img-fluid w-100 rounded"
                   style={{ maxHeight: "400px", minWidth:"100%", objectFit: "cover" }}
