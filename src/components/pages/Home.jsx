@@ -38,9 +38,8 @@ export default function Home() {
 
     return (
          <div className="container mt-4">
-
+            <h2 className="mb-4 text-center text-light">Automobili na prodaju</h2>
             <SearchBox OnSearch={handleSearch} />
-            <h2 className="mb-4 text-center">Automobili na prodaju</h2>
             <div className="row">
                 {cars.length === 0 && (
                     <p className="text-muted">Nema rezultata za izabrane kriterijume!</p>
