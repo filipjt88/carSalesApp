@@ -3,6 +3,8 @@ import CarCard from "../../components/CarCard";
 import { useState } from "react";
 import SearchBox from "../SearchBox";
 
+const API_URL = "https://localhost/backend/api/cars.php";
+
 export default function Home() {
         const [cars, setCars] = useState(allCars);
         
