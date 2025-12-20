@@ -1,47 +1,25 @@
 import { cars as allCars } from "../../data/cars";
 import CarCard from "../../components/CarCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SearchBox from "../SearchBox";
 
 const API_URL = "https://localhost/backend/api/cars.php";
 
 export default function Home() {
-        const [cars, setCars] = useState(allCars);
-        
-        const handleSearch = (filters) => {
-            let result = allCars;
-
-            if(filters.brand !== "Sve marke") {
-                result = result.filter(c => c.brand === filters.brand);
-            }
-
-            if(filters.model) {
-                result = result.filter(c => c.model === filter.model);
-            }
-
-            if(filters.fuel !== "Sva goriva") {
-                result = result.filter(c => c.fuel === filters.fuel);
-            }
-
-            if(filters.priceTo) {
-                result = result.filter(c => c.price <= Number(filters.priceTo));
-            }
-
-            if(filters.yearsFrom) {
-                result = result.filter(c => c.year >= Number(filters.yearsFrom));
-            }
-
-            if(filters.yearsTo) {
-                result = result.filter(c => c.year <= Number(filters.yearsTo));
-            }
-
-            setCars(result);
+        const [cars, setCars] = useState([]);
+        const fetchCars = async (filters = {}) => {
+            const res = await axios.get(API_URL, {params: filters});
+            setCars(res.data);
         };
 
+        useEffect(() => {
+            fetchCars();
+        }, []);
+    
     return (
          <div className="container mt-4">
             <h2 className="mb-4 text-center text-light">Automobili na prodaju</h2>
-            <SearchBox OnSearch={handleSearch} />
+            <SearchBox OnSearch={fetchCars} />
             <div className="row">
                 {cars.length === 0 && (
                     <p className="text-muted">Nema rezultata za izabrane kriterijume!</p>
