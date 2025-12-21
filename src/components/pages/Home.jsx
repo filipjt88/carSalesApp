@@ -11,7 +11,6 @@ export default function Home() {
             const res = await axios.get(API_URL, {params: filters});
             setCars(res.data);
         };
-
         useEffect(() => {
             fetchCars();
         }, []);
