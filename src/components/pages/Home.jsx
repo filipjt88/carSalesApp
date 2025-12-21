@@ -24,8 +24,8 @@ export default function Home() {
                 {cars.length === 0 && (
                     <p className="text-muted">Nema rezultata za izabrane kriterijume!</p>
                 )}
-                {cars.map(car => (
-                    <CarCard key={car.id} car={car}/>
+               {Array.isArray(cars) && cars.map(car => (
+                    <CarCard key={car.id} car={car} />
                 ))}
             </div>
         </div>

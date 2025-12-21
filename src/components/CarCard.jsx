@@ -5,7 +5,7 @@ export default function CarCard({ car }) {
     return (
         <div className="col-md-4 mb-4">
             <div className="card shadow-sm">
-                <img src={car.image} className="car-img-top" alt={car.model} />
+                <img src={car.images?.[0] || "https://via.placeholder.com/400x250"} className="car-img-top" alt={car.model} />
                 <div className="card-body">
                     <h5 className="card-title">
                         {car.brand} {car.model}
