@@ -1,5 +1,6 @@
-import CarCard from "../../components/CarCard";
 import { useEffect, useState } from "react";
+import axios from "axios";
+import CarCard from "../../components/CarCard";
 import SearchBox from "../SearchBox";
 
 const API_URL = "https://localhost/backend/api/cars.php";
