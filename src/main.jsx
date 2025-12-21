@@ -3,10 +3,13 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
+import { AuthProvider } from './context/AuthContext.jsx';
 
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <AuthProvider>
     <App />
-  </StrictMode>,
+    </AuthProvider>
+  </React.StrictMode>,
 )
