@@ -3,7 +3,6 @@ import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import Header from "./components/Header";
 import Home from "./components/pages/Home";
-// import CarDetails from "./components/pages/CarDetails";
 
 export default function App() {
   return (
