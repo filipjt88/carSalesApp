@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { cars } from "../../data/cars";
 import { useState } from "react";
 
 export default function CarDetails() {

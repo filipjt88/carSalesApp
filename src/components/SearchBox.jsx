@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { cars } from "../data/cars";
 
 
 export default function SearchBox({ OnSearch }) {

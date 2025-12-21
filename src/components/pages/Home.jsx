@@ -1,4 +1,3 @@
-import { cars as allCars } from "../../data/cars";
 import CarCard from "../../components/CarCard";
 import { useEffect, useState } from "react";
 import SearchBox from "../SearchBox";
