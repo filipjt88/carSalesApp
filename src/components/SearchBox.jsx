@@ -18,12 +18,12 @@ export default function SearchBox({ OnSearch }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         OnSearch({
-            brand,
+            brand: brand !== "Sve marke" ? brand : "",
             model,
+            fuel: fuel !== "Sva goriva" ? fuel : "",
             priceTo,
             yearsFrom,
-            yearTo,
-            fuel
+            yearTo
         });
     };
 
