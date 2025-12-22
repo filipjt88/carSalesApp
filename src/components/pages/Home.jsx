@@ -3,7 +3,7 @@ import axios from "axios";
 import CarCard from "../../components/CarCard";
 import SearchBox from "../SearchBox";
 
-const API_URL = "https://localhost/backend/api/cars.php";
+const API_URL = "http://localhost/carSalesApp/backend/api/cars.php";
 
 export default function Home() {
         const [cars, setCars] = useState([]);
