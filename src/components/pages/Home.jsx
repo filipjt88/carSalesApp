@@ -7,8 +7,8 @@ const API_URL = "http://localhost/carSalesApp/backend/api/cars.php";
 
 export default function Home() {
         const [cars, setCars] = useState([]);
-        const fetchCars = async (filters = {}) => {
-            const res = await axios.get(API_URL, {params: filters});
+        const fetchCars       = async (filters = {}) => {
+            const res         = await axios.get(API_URL, {params: filters});
             setCars(res.data);
         };
         useEffect(() => {

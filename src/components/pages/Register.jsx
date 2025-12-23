@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const API = "http://localhost/carSalesApp/backend/api/register.php";
 
 export default function Register() {
-    const navigate = useNavigate();
+    const navigate          = useNavigate();
     const [form, setForm]   = useState({ name: "", email: "", password: "" });
     const [error, setError] = useState("");
 
