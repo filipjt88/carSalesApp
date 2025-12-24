@@ -31,18 +31,32 @@ export default function Login() {
             }
         );
         login(res.data);
+        // Redirekcija na home pocetnu stranicu
+        navigate("/");
+      } catch (err) {
+        setError(err.response?.data?.error || "Greska pri logovanju!");
       }
     };
 
     return (
-        <div className="container mt-5" style={{ maxWidth: 400}}>
-            <h3 className="mb-3">Login</h3>
-            {error && <div className="alert alert-danger">{error}</div>}
-            <form onSubmit={submit}>
-                <input className="form-control mb-3" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-                <input className="form-control mb-3" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-                <button className="btn btn-primary w-100">Login</button>
-            </form>
+        <div className="container mt-5">
+            <div className="row justify-content-center">
+                <div className="col-md-4">
+                    <h3 className="mb-4 text-center">Login</h3>
+                    {error && (
+                        <div className="alert alert-danger">
+                            {error}
+                        </div>
+                    )}
+
+                    <form onSubmit={submit}>
+                        <div className="mb-3">
+                            <label className="form-label">Email</label>
+                            <input type="email" className="form-control" placeholder="emaildemo@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     )
 }
