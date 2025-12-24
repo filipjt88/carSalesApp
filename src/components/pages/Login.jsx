@@ -54,6 +54,11 @@ export default function Login() {
                             <label className="form-label">Email</label>
                             <input type="email" className="form-control" placeholder="emaildemo@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
                         </div>
+                        <div className="mb-3">
+                            <label className="form-label">Password</label>
+                            <input type="password" className="form-control" placeholder="**%4^&^%^&" value={password} onChange={(e) => setPassword(e.target.value)} required/>
+                        </div>
+                        <button className="btn btn-success w-100">Login</button>
                     </form>
                 </div>
             </div>
