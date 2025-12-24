@@ -15,13 +15,23 @@ export default function Login() {
 
     const submit = async (e) => {
         e.preventDefault();
-        try {
-            const res = await axios.post(API, {email, password});
-            login(res.data);
-            navigate("/");
-        } catch (err) {
-            setError(err.response?.data?.error || "Greska");
-        }
+        setError("");
+
+      try {
+        const res = await axios.post(
+            API,
+            {
+                email: email.trim(),
+                password: password
+            },
+            {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }
+        );
+        login(res.data);
+      }
     };
 
     return (
