@@ -13,7 +13,7 @@ export default function CarCard({ car }) {
                     <p className="card-text">
                         Godiste: {car.year} <br/>
                         Kilometraza: {car.km.toLocaleString()} km <br/>
-                        Cena: {car.price} eura
+                        Cena: {car.price} evra
                     </p>
                     <Link to={`/car/${car.id}`} className="btn btn-primary w-100">
                     Detaljnije</Link>
