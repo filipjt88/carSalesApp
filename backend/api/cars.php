@@ -45,5 +45,4 @@ foreach ($cars as $car) {
     $car['images'] = $car['images'] ? explode(',', $car['images']) : [];
 }
 
-echo json_encode($_GET);
-exit;
+echo json_encode($cars);
