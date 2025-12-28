@@ -7,10 +7,12 @@ const API_URL = "http://localhost/carSalesApp/backend/api/cars.php";
 
 export default function Home() {
         const [cars, setCars] = useState([]);
+
         const fetchCars       = async (filters = {}) => {
             const res         = await axios.get(API_URL, {params: filters});
             setCars(res.data);
         };
+
         useEffect(() => {
             fetchCars();
         }, []);
@@ -18,7 +20,7 @@ export default function Home() {
     return (
          <div className="container mt-4">
             <h2 className="mb-4 text-center text-light">Automobili na prodaju</h2>
-            <SearchBox OnSearch={fetchCars} />
+            <SearchBox cars={cars} OnSearch={fetchCars} />
             <div className="row">
                 {cars.length === 0 && (
                     <p className="text-muted">Nema rezultata za izabrane kriterijume!</p>
