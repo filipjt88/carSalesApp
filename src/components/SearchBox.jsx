@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export default function SearchBox({ OnSearch }) {
     const brands  = ["Sve marke", ...new Set(cars.map(c => c.brand))];
     const fuels   = ["Sva goriva", ... new Set(cars.map(c => c.fuel))];
