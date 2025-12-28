@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export default function SearchBox({ OnSearch }) {
+export default function SearchBox({ cars = [], OnSearch }) {
+
     const brands  = ["Sve marke", ...new Set(cars.map(c => c.brand))];
     const fuels   = ["Sva goriva", ... new Set(cars.map(c => c.fuel))];
 
@@ -37,7 +38,7 @@ export default function SearchBox({ OnSearch }) {
                                 setModel("");
                             }}>
                                 {brands.map(b => (
-                                    <option key={b}>{b}</option>
+                                    <option key={b} value={b}>{b}</option>
                                 ))}
                             </select>
                         </div>
@@ -58,7 +59,7 @@ export default function SearchBox({ OnSearch }) {
                             <label className="form-label">Gorivo</label>
                             <select className="form-select" value={fuel} onChange={e => setFuel(e.target.value)}>
                                 {fuels.map(f => (
-                                    <option key={f}>{f}</option>
+                                    <option key={f} value={f}>{f}</option>
                                 ))}
                             </select>
                         </div>
