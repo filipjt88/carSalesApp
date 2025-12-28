@@ -55,6 +55,10 @@ export default function SearchBox({ cars = [], OnSearch }) {
                             <label className="form-label">Godiste od</label>
                             <input type="number" className="form-control" value={yearsFrom} onChange={e => setYearFrom(e.target.value)} />   
                         </div>
+                        <div className="col-md-2">
+                            <label className="form-label">Godiste do</label>
+                            <input type="number" className="form-control" value={yearTo} onChange={e => setYearTo(e.target.value)} />
+                        </div>
                         <div className="col-md-3">
                             <label className="form-label">Gorivo</label>
                             <select className="form-select" value={fuel} onChange={e => setFuel(e.target.value)}>
@@ -62,10 +66,6 @@ export default function SearchBox({ cars = [], OnSearch }) {
                                     <option key={f} value={f}>{f}</option>
                                 ))}
                             </select>
-                        </div>
-                        <div className="col-md-2">
-                            <label className="form-label">Godiste do</label>
-                            <input type="number" className="form-control" value={yearTo} onChange={e => setYearTo(e.target.value)} />
                         </div>
                         <div className="col-md-3 d-flex align-items-end">
                             <button className="btn btn-primary w-100">
