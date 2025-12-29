@@ -22,3 +22,17 @@ $stmt->execute([
 
 $car_id = $pdo=>lastInsertId();
 
+
+$uploadDir = "../uploads";
+$isMain = 1;
+
+foreach ($_FILES['images']['tmp_name'] as $i => $tmp) {
+    $name = time(). "_" . $_FILES['images']['name'][$i];
+    move_uploaded_file($tmp, $uploadDir . $name);
+
+    $stmt = $pdo->prepare("INSERT INTO images (car_id, path, is_main) VALUES (?,?,?)");
+    $stmt->execute([$car_id, $name, $isMain]);
+    $isMain = 0;
+}
+
+echo json_encode(["success" => true]);
