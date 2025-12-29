@@ -3,14 +3,14 @@ import { useState } from "react";
 export default function SearchBox({ cars = [], OnSearch }) {
 
     const brands  = ["Sve marke", ...new Set(cars.map(c => c.brand))];
-    const fuels   = ["Sva goriva", ... new Set(cars.map(c => c.fuel))];
+    const fuels   = ["Gorivo", ... new Set(cars.map(c => c.fuel))];
 
     const [brand, setBrand]        = useState("Sve marke");
     const [model, setModel]        = useState("");
     const [priceTo, setPriceTo]    = useState("");
     const [yearsFrom, setYearFrom] = useState("");
     const [yearTo, setYearTo]      = useState("");
-    const [fuel, setFuel]          = useState("Sva goriva");
+    const [fuel, setFuel]          = useState("Gorivo");
 
     const models = brand === "Sve marke" ? [] : [...new Set(cars.filter(c => c.brand === brand).map(c => c.model))];
 
@@ -19,7 +19,7 @@ export default function SearchBox({ cars = [], OnSearch }) {
         OnSearch({
             brand: brand !== "Sve marke" ? brand : "",
             model,
-            fuel: fuel !== "Sva goriva" ? fuel : "",
+            fuel: fuel !== "Gorivo" ? fuel : "",
             priceTo,
             yearsFrom,
             yearTo
