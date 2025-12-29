@@ -1,8 +1,11 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+
 require_once "../config/db.php";
 
 
-$sql = "SELECT c.*, GROUP_CONCAT(i.path ORDER BY i.is_main DESC) AS images FROM cars c LEFT JOIN images i ON i.car_id = c.id WHERE 1=1";
+$sql = "SELECT * FROM cars WHERE 1=1;
 
 
 $params = [];
