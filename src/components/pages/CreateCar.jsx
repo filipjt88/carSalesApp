@@ -38,6 +38,13 @@ export default function CreateCar() {
         });
 
         navigate("/");
-    }
+    };
+
+    return (
+        <div className="container mt-4" style={{ maxWidth: 700}}>
+            <h3 className="mb-3">Dodaj oglas</h3>
+            
+        </div>
+    )
     }
 }
