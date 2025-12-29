@@ -20,4 +20,7 @@ export default function CreateCar() {
         description: "",
         city:""
     });
+
+    const [images, setImages] = useState([]);
+    
 }
