@@ -59,8 +59,10 @@ export default function CreateCar() {
                 <input name="gearbox" className="form-control mb-2" placeholder="Menjac" onChange={change} />
                 <input name="hp" className="form-control mb-2" placeholder="Snaga" onChange={change} />
                 <input name="body" className="form-control mb-2" placeholder="Karoserija" onChange={change} />
-                <input name="description" className="form-control mb-2" placeholder="Opis" onChange={change} />
                 <input name="city" className="form-control mb-2" placeholder="Grad" onChange={change} />
+                <textarea name="description" className="form-control mb-2" placeholder="Opis" onChange={change} />
+                <input type="file" multiple className="form-control mb-3" placeholder="Grad" onChange={e => setImages([...e.target.files])} />
+                <button className="btn btn btn-success w-100">Sacuvaj oglas</button>
             </form>
         </div>
     )
