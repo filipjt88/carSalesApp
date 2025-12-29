@@ -25,5 +25,19 @@ export default function CreateCar() {
 
     const change = (e) => {
         setForm({...form, [e.target.name]: e.target.value});
+
+    const submit = async (e) => {
+        e.preventDefault();
+
+        const data = new FormData();
+        Object.keys(form).forEach(k => data.append(k, form[k]));
+        images.forEach(img => data.append("images[]", img));
+
+        await axios.post(API, data, {
+            headers: {"Content-Type" : "multipart/form-data"}
+        });
+
+        navigate("/");
+    }
     }
 }
