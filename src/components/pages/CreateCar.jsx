@@ -22,5 +22,8 @@ export default function CreateCar() {
     });
 
     const [images, setImages] = useState([]);
-    
+
+    const change = (e) => {
+        setForm({...form, [e.target.name]: e.target.value});
+    }
 }
