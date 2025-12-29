@@ -44,7 +44,23 @@ export default function CreateCar() {
         <div className="container mt-4" style={{ maxWidth: 700}}>
             <h3 className="mb-3">Dodaj oglas</h3>
             <form onSubmit={submit} encType="multipart/form-data">
-                <input name="brand" className="form-control" />
+                <input name="brand" className="form-control mb-2" placeholder="Marka" onChange={change} />
+                <input name="model" className="form-control mb-2" placeholder="Model" onChange={change} />
+                <input name="year" className="form-control mb-2" placeholder="Year" onChange={change} />
+                <input name="price" className="form-control mb-2" placeholder="Price" onChange={change} />
+                <input name="km" className="form-control mb-2" placeholder="Km" onChange={change} />
+                <select name="fuel" className="form-select mb-2" onChange={change}>
+                    <option value="">Gorivo</option>
+                    <option>Dizel</option>
+                    <option>Benzin</option>
+                    <option>Hibrid</option>
+                    <option>Elektricni</option>
+                </select>
+                <input name="gearbox" className="form-control mb-2" placeholder="Menjac" onChange={change} />
+                <input name="hp" className="form-control mb-2" placeholder="Snaga" onChange={change} />
+                <input name="body" className="form-control mb-2" placeholder="Karoserija" onChange={change} />
+                <input name="description" className="form-control mb-2" placeholder="Opis" onChange={change} />
+                <input name="city" className="form-control mb-2" placeholder="Grad" onChange={change} />
             </form>
         </div>
     )
