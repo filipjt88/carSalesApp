@@ -43,7 +43,9 @@ export default function CreateCar() {
     return (
         <div className="container mt-4" style={{ maxWidth: 700}}>
             <h3 className="mb-3">Dodaj oglas</h3>
-            
+            <form onSubmit={submit} encType="multipart/form-data">
+                <input name="brand" className="form-control" />
+            </form>
         </div>
     )
     }
