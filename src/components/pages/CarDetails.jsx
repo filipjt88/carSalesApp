@@ -14,3 +14,15 @@ export default function CarDetails() {
         });
     }, [id]);
 }
+
+if (!car) return <p className="text-center mt-5">Ucitavanje ...</p>
+
+return (
+    <div className="container mt-4">
+        <h2>{car.brand} {car.model}</h2>
+
+        <img src={`http://localhost/carSalesApp/backend/uploads/${car.images[0]}`} className="img-fluid mb-3" />
+        
+        <h4>{car.price} €</h4>
+    </div>
+)
