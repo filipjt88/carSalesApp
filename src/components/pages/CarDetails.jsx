@@ -13,7 +13,7 @@ export default function CarDetails() {
             setCar(res.data);
         });
     }, [id]);
-}
+
 
 if (!car) return <p className="text-center mt-5">Ucitavanje ...</p>
 
@@ -35,3 +35,4 @@ return (
         <p className="mt-3">{car.decription}</p>
     </div>
 )
+}
