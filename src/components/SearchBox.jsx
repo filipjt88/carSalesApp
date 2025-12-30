@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function SearchBox({ cars = [], OnSearch }) {
 
     const brands  = ["Sve marke", ...new Set(cars.map(c => c.brand))];
-    const fuels   = ["Gorivo", ... new Set(cars.map(c => c.fuel))];
+    const fuels   = ["Gorivo", ...new Set(cars.map(c => c.fuel))];
 
     const [brand, setBrand]        = useState("Sve marke");
     const [model, setModel]        = useState("");
@@ -68,9 +68,7 @@ export default function SearchBox({ cars = [], OnSearch }) {
                             </select>
                         </div>
                         <div className="col-md-3 d-flex align-items-end">
-                            <button className="btn btn-primary w-100">
-                                Pretrazi
-                            </button>
+                            <button className="btn btn-primary w-100">Pretrazi</button>
                         </div>
                     </div>
                 </form>
