@@ -14,7 +14,7 @@ export default function SearchBox({ cars = [], OnSearch }) {
 
     const models = brand === "Sve marke" ? [] : [...new Set(cars.filter(c => c.brand === brand).map(c => c.model))];
 
-    const handleSubmit = (e) => {
+    const submit = (e) => {
         e.preventDefault();
         OnSearch({
             brand: brand !== "Sve marke" ? brand : "",
@@ -29,7 +29,7 @@ export default function SearchBox({ cars = [], OnSearch }) {
     return (
         <div className="card shadow-sm mb-4">
             <div className="card-body">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={submit}>
                     <div className="row g-3">
                         <div className="col-md-3">
                             <label className="form-label">Marka</label>
