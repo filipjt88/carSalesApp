@@ -4,9 +4,7 @@ header("Content-Type: application/json");
 
 require_once "../config/db.php";
 
-
 $sql = "SELECT * FROM cars WHERE 1=1";
-
 
 $params = [];
 
