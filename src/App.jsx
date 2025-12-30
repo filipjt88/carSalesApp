@@ -3,6 +3,7 @@ import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import Header from "./components/Header";
 import Home from "./components/pages/Home";
+import CreateCar from "./components/pages/CreateCar";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cars/:id" element={<CreateCar/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
