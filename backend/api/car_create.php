@@ -1,10 +1,28 @@
 <?php
-require "./config/db.php";
+require "../config/db.php";
 session_start();
 
 $user_id = 1;
 
-$stmt = $pdo->prepare("INSERT INTO cars (user_id, brand, model, year, price, km, fuel, gearbox, body, city, description" VALUES(?,?,?,?,?,?,?,?,?,?,?));
+$sql = "
+INSERT INTO cars 
+(
+    user_id,
+    brand,
+    model,
+    year,
+    price,
+    km,
+    fuel,
+    gearbox,
+    body,
+    city,
+    description
+)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+";
+
+$stmt = $pdo->prepare($sql);
 
 $stmt->execute([
     $user_id,
@@ -20,7 +38,7 @@ $stmt->execute([
     $_POST['description']
 ]);
 
-$car_id = $pdo=>lastInsertId();
+$car_id = $pdo->lastInsertId();
 
 
 $uploadDir = "../uploads";
