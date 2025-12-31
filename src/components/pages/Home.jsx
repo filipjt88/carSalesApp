@@ -19,7 +19,7 @@ export default function Home() {
             fetchCars();
         }, []);
 
-        const totalPage = Math.ceil(cars.length / PER_PAGE);
+        const totalPages = Math.ceil(cars.length / PER_PAGE);
         const start = (page - 1) * PER_PAGE;
         const currentCars = cars.slice(start, start + PER_PAGE);
 
@@ -35,6 +35,17 @@ export default function Home() {
                     <CarCard key={car.id} car={car} />
                 ))}
             </div>
+
+            {/* Pagination */}
+                {totalPages > 1 && (
+                    <nav className="d-flex justify-content-center mt-4">
+                        <ul className="pagination">
+                            <li className={`page-item ${page === 1 && "disabled"}`}>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                )}
         </div>
     );
 }
