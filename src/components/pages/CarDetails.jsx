@@ -41,7 +41,7 @@ return (
         </div>
 
         {/* Podaci */}
-        
+
         <div className="col-md-5">
             <h3>{car.brand} {car.model}</h3>
             <h4 className="text-primary mb-3">{car.price}  €</h4>
@@ -55,7 +55,6 @@ return (
             </ul>
             <p>{car.description}</p>
         </div>
-
     </div>
 )
 }
