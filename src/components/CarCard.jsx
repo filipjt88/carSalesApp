@@ -6,8 +6,7 @@ export default function CarCard({ car }) {
     <div className="col-md-4 mb-4">
       <div className="card h-100 shadow-sm">
 
-        <img
-          src={`http://localhost/carSalesApp/backend/uploads/${car.image}`} className="card-img-top"
+        <img src={`http://localhost/carSalesApp/backend/uploads/${car.image}`} className="card-img-top"
           style={{ height: 200, objectFit: "cover" }}/>
         <div className="card-body">
           <h5>{car.brand} {car.model}</h5>
