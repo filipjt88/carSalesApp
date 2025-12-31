@@ -22,7 +22,10 @@ if (!car) return <p className="text-center mt-5">Ucitavanje ...</p>
 
 return (
     <div className="container mt-4">
-        
+        {/* Galerija */}
+        <div className="col-md-7">
+            <img src={IMG + mainImage} className="img-fluid rounded mb-3" style={{maxHeight: 420, objectFit: "cover", width: "100%"}} />
+        </div>
     </div>
 )
 }
