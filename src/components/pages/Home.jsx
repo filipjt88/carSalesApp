@@ -21,6 +21,8 @@ export default function Home() {
 
         const totalPage = Math.ceil(cars.length / PER_PAGE);
         const start = (page - 1) * PER_PAGE;
+        const currentCars = cars.slice(start, start + PER_PAGE);
+
     return (
          <div className="container mt-5">
             <h2 className="mb-4 text-center">Automobili na prodaju</h2>
