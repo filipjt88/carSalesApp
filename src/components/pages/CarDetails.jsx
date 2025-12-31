@@ -17,6 +17,7 @@ export default function CarDetails() {
         });
     }, [id]);
 
+    
 
 if (!car) return <p className="text-center mt-5">Ucitavanje ...</p>
 
