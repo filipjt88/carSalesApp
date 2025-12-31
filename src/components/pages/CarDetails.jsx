@@ -8,6 +8,7 @@ const IMG = "http://localhost/carSalesApp/backend/uploads/";
 export default function CarDetails() {
     const { id } = useParams();
     const [car, setCar] = useState(null);
+    const [mainImage, setMainImage] = useState("");
 
     useEffect(() => {
         axios.get(API, { params: { id } }).then(res => {
