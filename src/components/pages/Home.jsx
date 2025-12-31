@@ -43,6 +43,14 @@ export default function Home() {
                             <li className={`page-item ${page === 1 && "disabled"}`}>
                                 <button className="page-link" onClick={() => setPage(p => p -1)}>Prethodna strana</button>
                             </li>
+
+                            {[...Array(totalPages)].map((_, i) => (
+                                <li key={i} className={`page-item ${page === i + 1 ? "active" : ""}`}>
+                                    <button className="page-link" onClick={() => setPage( i + 1)}> {i + 1}</button>
+                                </li>
+                            ))}
+                            
+                            
                         </ul>
                     </nav>
                 )}
