@@ -43,7 +43,7 @@ return (
             <h4 className="text-primary mb-3">{car.price}  €</h4>
 
             <ul className="list-group mb-3">
-                
+                <li className="list-group-item">Godiste: {car.year}</li>
             </ul>
         </div>
 
