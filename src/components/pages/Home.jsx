@@ -50,7 +50,9 @@ export default function Home() {
                                 </li>
                             ))}
                             
-                            
+                            <li className={`page-item ${page === totalPages && "disabled"}`}>
+                                <button className="page-link" onClick={() => setPage(p => p + 1)}>Sledeca stranica</button>
+                            </li>
                         </ul>
                     </nav>
                 )}
