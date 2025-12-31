@@ -49,6 +49,7 @@ return (
                 <li className="list-group-item">Menjac: {car.gearbox}</li>
                 <li className="list-group-item">Grad: {car.city}</li>
             </ul>
+            <p>{car.description}</p>
         </div>
 
     </div>
