@@ -13,6 +13,7 @@ export default function CarDetails() {
     useEffect(() => {
         axios.get(API, { params: { id } }).then(res => {
             setCar(res.data);
+            setMainImage(res.data.images?.[0]);
         });
     }, [id]);
 
