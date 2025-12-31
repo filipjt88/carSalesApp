@@ -36,6 +36,12 @@ return (
                 ))}
             </div>
         </div>
+
+        {/* Podaci */}
+        <div className="col-md-5">
+            <h3>{car.brand} {car.model}</h3>
+        </div>
+
     </div>
 )
 }
