@@ -41,7 +41,7 @@ export default function Home() {
                     <nav className="d-flex justify-content-center mt-4">
                         <ul className="pagination">
                             <li className={`page-item ${page === 1 && "disabled"}`}>
-                                
+                                <button className="page-link" onClick={() => setPage(p => p -1)}>Prethodna strana</button>
                             </li>
                         </ul>
                     </nav>
