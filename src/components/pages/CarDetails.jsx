@@ -17,9 +17,9 @@ export default function CarDetails() {
         });
     }, [id]);
 
-    
 
-if (!car) return <p className="text-center mt-5">Ucitavanje ...</p>
+
+if (!car || !mainImage) return <p className="text-center mt-5">Ucitavanje ...</p>
 
 return (
     <div className="container mt-4">
