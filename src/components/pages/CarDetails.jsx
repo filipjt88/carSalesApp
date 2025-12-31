@@ -45,6 +45,7 @@ return (
             <ul className="list-group mb-3">
                 <li className="list-group-item">Godiste: {car.year}</li>
                 <li className="list-group-item">Kilometraza: {car.km}</li>
+                <li className="list-group-item">Gorivo: {car.fuel}</li>
             </ul>
         </div>
 
