@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 const API = "http://localhost/carSalaesApp/backend/api/car.php";
+const IMG = "http://localhost/carSalesApp/backend/uploads/";
 
 export default function CarDetails() {
     const { id } = useParams();
