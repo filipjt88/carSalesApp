@@ -15,7 +15,6 @@ export default function CarCard({ car }) {
             {car.year} • {car.km} km • {car.fuel}
           </small>
         </div>
-
         <div className="card-footer bg-white border-0">
           <Link to={`/cars/${car.id}`} className="btn btn-outline-primary w-100">
             Pogledaj oglas
