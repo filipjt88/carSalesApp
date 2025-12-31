@@ -18,6 +18,8 @@ export default function Home() {
         useEffect(() => {
             fetchCars();
         }, []);
+
+        const totalPage = Math.ceil(cars.length / PER_PAGE);
     
     return (
          <div className="container mt-5">
