@@ -47,6 +47,7 @@ return (
                 <li className="list-group-item">Kilometraza: {car.km}</li>
                 <li className="list-group-item">Gorivo: {car.fuel}</li>
                 <li className="list-group-item">Menjac: {car.gearbox}</li>
+                <li className="list-group-item">Grad: {car.city}</li>
             </ul>
         </div>
 
