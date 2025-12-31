@@ -25,6 +25,16 @@ return (
         {/* Galerija */}
         <div className="col-md-7">
             <img src={IMG + mainImage} className="img-fluid rounded mb-3" style={{maxHeight: 420, objectFit: "cover", width: "100%"}} />
+            <div className="d-flex gap-2">
+                {car.images.map((img, i) => (
+                    <img key={i} src={IMG + img} onClick={() => setMainImage(img)} className={`rounded border ${mainImage === img ? "border-primary" : ""}`} style={{
+                        width: 90,
+                        height: 70,
+                        objectFit: "cover",
+                        cursor: "pointer"
+                    }}/>
+                ))}
+            </div>
         </div>
     </div>
 )
