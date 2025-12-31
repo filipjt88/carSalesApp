@@ -10,6 +10,7 @@ export default function CarDetails() {
     const [car, setCar] = useState(null);
     const [mainImage, setMainImage] = useState("");
 
+    
     useEffect(() => {
         axios.get(API, { params: { id } }).then(res => {
             setCar(res.data);
