@@ -9,7 +9,7 @@ export default function CarDetails() {
     const { id } = useParams();
     const [car, setCar] = useState(null);
     const [mainImage, setMainImage] = useState("");
-
+    const [lightBoxOpen, setLightBoxOpen] = useState(false);
 
     useEffect(() => {
         axios.get(API, { params: { id } }).then(res => {
