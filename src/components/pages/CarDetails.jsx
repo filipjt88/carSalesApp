@@ -32,7 +32,7 @@ return (
             />
             <div className="d-flex gap-2">
                 {car.images.map((img, i) => (
-                    <img key={i} src={IMG + img} onClick={() => setMainImage(img)} className={`rounded border ${mainImage === img ? "border-primary" : ""}`} style={{
+                    <img key={i} src={IMG + img} onClick={() => setMainImage(img)} className={`rounded border ${mainImage === img ? "border-primary border-2" : ""}`} style={{
                         width: 90,
                         height: 70,
                         objectFit: "cover",
