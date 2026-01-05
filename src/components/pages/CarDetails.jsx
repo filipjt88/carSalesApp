@@ -63,6 +63,9 @@ return (
         {lightBoxOpen && (
             <div className="position-fixed top-0 start-0 w-100 d-flex justify-content-center align-items-center" style={{background:"rgba(0,0,0,0.80)", zIndex:9999}} onClick={() => setLightBoxOpen(false)}>
                 <img src={IMG + mainImage.path} style={{maxWidth:"90%",maxHeight:"90%", objectFit:"contain"}} onClick={e => e.stopPropagation()} />
+                <button className="btn btn-light position-absolute top-0 end-0 m-3" onClick={() => setLightBoxOpen(false)}>
+                    X
+                </button>
             </div>
         )}
     </>
