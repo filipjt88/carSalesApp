@@ -4,6 +4,7 @@ import CarCard from "../../components/CarCard";
 import SearchBox from "../SearchBox";
 
 const API_URL = "http://localhost/carSalesApp/backend/api/cars.php";
+const PER_PAGE = 6;
 
 export default function Home() {
         const [cars, setCars] = useState([]);
