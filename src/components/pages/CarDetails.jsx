@@ -23,8 +23,8 @@ export default function CarDetails() {
 if (!car || !mainImage) return <p className="text-center mt-5">Ucitavanje ...</p>
 
 return (
+    <>
     <div className="container mt-4">
-
         {/* Galerija */}
         <div className="col-md-7">
             <img src={IMG + mainImage.path} className="img-fluid rounded mb-3" style={{maxHeight: 420, objectFit: "cover", width: "100%", cursor:"zoom-in"}}
@@ -59,6 +59,12 @@ return (
         </div>
     </div>
 
-    
-)
+        {/* Lightbox  */}
+        {lightBoxOpen && (
+            <div className="position-fixed top-0 start-0 w-100 d-flex justify-content-center align-items-center" style={{background:"rgba(0,0,0,0.80)", zIndex:9999}} onClick={() => setLightBoxOpen(false)}>
+                <img src={IMG + mainImage.path} style={{maxWidth:"90%",maxHeight:"90%", objectFit:"contain"}} onClick={e => e.stopPropagation()} />
+            </div>
+        )}
+    </>
+);
 }
