@@ -3,6 +3,7 @@ import axios from "axios";
 import CarCard from "../../components/CarCard";
 import SearchBox from "../SearchBox";
 
+
 const API_URL = "http://localhost/carSalesApp/backend/api/cars.php";
 const PER_PAGE = 6;
 
@@ -36,7 +37,6 @@ export default function Home() {
                     <CarCard key={car.id} car={car} />
                 ))}
             </div>
-
             {/* Pagination */}
                 {totalPages > 1 && (
                     <nav className="d-flex justify-content-center mt-4">
