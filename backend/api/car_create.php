@@ -3,10 +3,16 @@ require "../config/db.php";
 session_start();
 
 
-$brand = $_POST['brand'] ?? '';
-$model = $_POST['model'] ?? '';
-$year  = $_POST['year'] ?? null;
-$price = $_POST['price'] ?? null;
+$brand       = $_POST['brand'] ?? '';
+$model       = $_POST['model'] ?? '';
+$year        = $_POST['year'] ?? null;
+$price       = $_POST['price'] ?? null;
+$km          = $_POST['km'] ?? null;
+$fuel        = $_POST['fuel'] ?? '';
+$gearbox     = $_POST['gearbox'] ?? '';
+$body        = $_POST['body'] ?? '';
+$city        = $_POST['city'] ?? '';
+$description = $_POST['description'] ?? '';
 
 
 $user_id = 1;
