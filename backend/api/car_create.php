@@ -14,7 +14,6 @@ $body        = $_POST['body'] ?? '';
 $city        = $_POST['city'] ?? '';
 $description = $_POST['description'] ?? '';
 
-
 $user_id = 1;
 
 $sql = "
