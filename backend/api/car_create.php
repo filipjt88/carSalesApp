@@ -2,6 +2,13 @@
 require "../config/db.php";
 session_start();
 
+
+$brand = $_POST['brand'] ?? '';
+$model = $_POST['model'] ?? '';
+$year  = $_POST['year'] ?? null;
+$price = $_POST['price'] ?? null;
+
+
 $user_id = 1;
 
 $sql = "
