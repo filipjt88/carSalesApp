@@ -19,17 +19,7 @@ $user_id = 1;
 $sql = "
 INSERT INTO cars 
 (
-    user_id,
-    brand,
-    model,
-    year,
-    price,
-    km,
-    fuel,
-    gearbox,
-    body,
-    city,
-    description
+    brand, model, year, price, km, fuel, gearbox, body, city, description
 )
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 ";
