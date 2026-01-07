@@ -2,22 +2,24 @@
 require "../config/db.php";
 session_start();
 
+
+$brand       = $_POST['brand'] ?? '';
+$model       = $_POST['model'] ?? '';
+$year        = $_POST['year'] ?? null;
+$price       = $_POST['price'] ?? null;
+$km          = $_POST['km'] ?? null;
+$fuel        = $_POST['fuel'] ?? '';
+$gearbox     = $_POST['gearbox'] ?? '';
+$body        = $_POST['body'] ?? '';
+$city        = $_POST['city'] ?? '';
+$description = $_POST['description'] ?? '';
+
 $user_id = 1;
 
 $sql = "
 INSERT INTO cars 
 (
-    user_id,
-    brand,
-    model,
-    year,
-    price,
-    km,
-    fuel,
-    gearbox,
-    body,
-    city,
-    description
+    brand, model, year, price, km, fuel, gearbox, body, city, description
 )
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 ";

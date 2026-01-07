@@ -9,7 +9,7 @@ export default function Header() {
                 </Link>
                 <form className="d-flex ms-auto" style={{maxWidth:"400px"}}>
                     <input className="form-control me-2" type="search" placeholder="Pretraga..." />
-                    <button className="btn btn-outline-light" type="submit">Trazi</button>
+                    <button className="btn btn-outline-light" type="submit">Pretraga</button>
                 </form>
             </div>
         </nav>
