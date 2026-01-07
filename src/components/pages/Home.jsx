@@ -37,20 +37,18 @@ export default function Home() {
                     <CarCard key={car.id} car={car} />
                 ))}
             </div>
-            {/* Pagination */}
+            {/* Paginacija */}
                 {totalPages > 1 && (
                     <nav className="d-flex justify-content-center mt-4">
                         <ul className="pagination">
                             <li className={`page-item ${page === 1 && "disabled"}`}>
                                 <button className="page-link" onClick={() => setPage(p => p -1)}>Prethodna strana</button>
                             </li>
-
                             {[...Array(totalPages)].map((_, i) => (
                                 <li key={i} className={`page-item ${page === i + 1 ? "active" : ""}`}>
                                     <button className="page-link" onClick={() => setPage( i + 1)}> {i + 1}</button>
                                 </li>
                             ))}
-                            
                             <li className={`page-item ${page === totalPages && "disabled"}`}>
                                 <button className="page-link" onClick={() => setPage(p => p + 1)}>Sledeca stranica</button>
                             </li>
