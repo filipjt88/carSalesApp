@@ -3,8 +3,9 @@ import axios from "axios";
 import CarCard from "../../components/CarCard";
 import SearchBox from "../SearchBox";
 
-
+// Api url
 const API_URL = "http://localhost/carSalesApp/backend/api/cars.php";
+// page 
 const PER_PAGE = 6;
 
 export default function Home() {
