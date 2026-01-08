@@ -6,6 +6,12 @@ header("Content-Type: aplication/json");
 require "../config/db.php";
 
 
+// Validacija
+if($_SERVER['REQUEST_METHOD'] !== "POST") {
+    echo json_encode(["error" => "Invaliad request!"]);
+    exit;
+}
+
 $brand       = $_POST['brand'] ?? '';
 $model       = $_POST['model'] ?? '';
 $year        = $_POST['year'] ?? null;
