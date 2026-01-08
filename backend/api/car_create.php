@@ -24,6 +24,7 @@ $city        = $_POST['city'] ?? '';
 $description = $_POST['description'] ?? '';
 $user_id     = 1; // trenutno (kasnije token)
 
+// Check
 if(!$brand || !$model || !$price) {
     echo json_encode(["error" => "Obavezna polja nisu popunjena!"]);
     exit;
