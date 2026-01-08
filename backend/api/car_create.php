@@ -58,5 +58,14 @@ if(isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
     $fileName = time(). "_" . uniqid() . "." . $ext;
     $targetPath = $uploadDir . $fileName;
 
-    
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $targetPath)) {
+        $stmtImg = $pdo->prepare("
+        INSERT INTO images (car_id, path, is_main)
+            VALUES (:car_id, :path, 1)
+        ");
+    $stmtImg->execute([
+        ":car_id" => $car_id,
+        ":path"   => $fileName
+    ]);
+    }
 }
