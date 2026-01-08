@@ -22,3 +22,4 @@ $gearbox     = $_POST['gearbox'] ?? '';
 $body        = $_POST['body'] ?? '';
 $city        = $_POST['city'] ?? '';
 $description = $_POST['description'] ?? '';
+$user_id     = 1; // trenutno (kasnije token)
