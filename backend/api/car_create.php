@@ -45,3 +45,6 @@ $stmt->execute([
     ":city"    => $city,
     ":description" => $description
 ]);
+
+$car_id = $pdo->lastInsertId();
+
