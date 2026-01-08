@@ -69,3 +69,9 @@ if(isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
     ]);
     }
 }
+
+// Response
+echo json_encode([
+    "success" => true,
+    "car_id"  => $car_id
+]);
