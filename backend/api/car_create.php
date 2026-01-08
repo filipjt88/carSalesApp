@@ -51,6 +51,7 @@ $car_id = $pdo->lastInsertId();
 
 // Upload slike za auto
 if(isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
+    // Upload
     $uploadDir = "../uploads/";
     if(!is_dir($uploadDir)) {
         mkdir($uploadDir, 0777, true);
@@ -59,6 +60,7 @@ if(isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
     $fileName = time(). "_" . uniqid() . "." . $ext;
     $targetPath = $uploadDir . $fileName;
 
+    // Upload file
     if(move_uploaded_file($_FILES['image']['tmp_name'], $targetPath)) {
         $stmtImg = $pdo->prepare("
         INSERT INTO images (car_id, path, is_main)
