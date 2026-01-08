@@ -28,3 +28,7 @@ if(!$brand || !$model || !$price) {
     echo json_encode(["error" => "Obavezna polja nisu popunjena!"]);
     exit;
 }
+
+// Insert to db
+$stmt = $pdo->prepare("INSERT INTO cars(user_id, brand, model, year, price, km, fuel, gearbox, body, city, description) VALUES (:user_id, :brand, :model, :year, :price, :km, :fuel, :gearbox, :body, :city, :description)");
+
