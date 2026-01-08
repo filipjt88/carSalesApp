@@ -48,3 +48,15 @@ $stmt->execute([
 
 $car_id = $pdo->lastInsertId();
 
+// Upload slike za auto
+if(isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
+    $uploadDir = "../uploads/";
+    if(!is_dir($uploadDir)) {
+        mkdir($uploadDir, 0777, true);
+    }
+    $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    $fileName = time(). "_" . uniqid() . "." . $ext;
+    $targetPath = $uploadDir . $fileName;
+
+    
+}
