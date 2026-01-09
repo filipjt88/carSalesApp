@@ -20,4 +20,8 @@ export default function CreateCar() {
     const [image, setImage] = useState(null);
     const [success, setSuccess] = useState("");
     const [error, setError] = useState("");
+
+    const handleChange = (e) => {
+        setForm({...form, [e.target.name]: e.target.value});
+    };
 }
