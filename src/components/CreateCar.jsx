@@ -24,4 +24,16 @@ export default function CreateCar() {
     const handleChange = (e) => {
         setForm({...form, [e.target.name]: e.target.value});
     };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSuccess("");
+
+        const formData = new formData();
+        Object.keys(form).forEach(key => {
+            formData.append(key, form[key]);
+        });
+        formData.append("image", image);
+    }
 }
