@@ -16,4 +16,6 @@ export default function CreateCar() {
         city: "",
         description: ""
     });
+
+    const [image, setImage] = useState(null);
 }
