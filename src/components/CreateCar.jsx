@@ -35,5 +35,27 @@ export default function CreateCar() {
             formData.append(key, form[key]);
         });
         formData.append("image", image);
-    }
+
+        try {
+            const res = await axios.post(API_URL, formData);
+            if(res.data.success) {
+                setSuccess("Oglas je uspesno dodat!");
+                setForm({
+                    brand: "",
+                    model: "",
+                    year: "",
+                    price: "",
+                    km: "",
+                    fuel: "",
+                    gearbox: "",
+                    body: "",
+                    city: "",
+                    description: ""
+                });
+                setImage(null);
+            }
+        } catch(err) {
+            setError("Greska, nije dodat oglas!");
+        }
+    };
 }
