@@ -19,5 +19,5 @@ export default function CreateCar() {
 
     const [image, setImage] = useState(null);
     const [success, setSuccess] = useState("");
-    
+    const [error, setError] = useState("");
 }
