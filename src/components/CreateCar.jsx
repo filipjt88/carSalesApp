@@ -65,6 +65,14 @@ export default function CreateCar() {
 
             {success && <div className="alert alert-success"> { success } </div>}
             {error && <div className="alert alert-danger"> { error } </div>}
+
+            <form onSubmit={handleSubmit} encType="multipart/form-data">
+                <div className="row g-3">
+                    <div className="col-md-6">
+                        <input className="form-control" name="brand" placeholder="Marka" value={form.brand} onChange={handleChange}/>
+                    </div>
+                </div>
+            </form>
         </div>
     )
 }
