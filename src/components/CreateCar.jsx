@@ -102,6 +102,12 @@ export default function CreateCar() {
                             <option>Hecbek</option>
                         </select>
                     </div>
+                    <div className="col-md-6">
+                        <input className="form-control" name="city" placeholder="Grad" value={form.city} onChange={handleChange} />
+                    </div>
+                    <div className="col-12">
+                        <textarea className="form-control" rows="4" name="description" placeholder="Opis vozila" value={form.description} onChange={handleChange}/>
+                    </div>
                 </div>
             </form>
         </div>
