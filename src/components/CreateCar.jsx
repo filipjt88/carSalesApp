@@ -66,6 +66,7 @@ export default function CreateCar() {
             {success && <div className="alert alert-success"> {success} </div>}
             {error && <div className="alert alert-danger"> {error} </div>}
 
+            {/* Form */}
             <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="row g-3">
                     <div className="col-md-6">
