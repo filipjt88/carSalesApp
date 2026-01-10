@@ -111,6 +111,9 @@ export default function CreateCar() {
                     <div className="col-12">
                         <input type="file" className="form-control" onChange={e => setImage(e.target.files[0])} required />
                     </div>
+                    <div className="col-12">
+                        <button className="btn btn-success w-100">Sacuvaj oglas</button>
+                    </div>
                 </div>
             </form>
         </div>
