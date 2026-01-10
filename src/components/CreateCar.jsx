@@ -83,6 +83,16 @@ export default function CreateCar() {
                      <div className="col-md-4">
                         <input type="number" name="km" placeholder="Kilometraza" value={form.km} onChange={handleChange} />
                     </div>
+                    <div className="col-md-6">
+                        <select name="fuel" className="form-select" value={form.fuel} onChange={handleChange}>
+                            <option value="">Gorivo</option>
+                            <option>Dizel</option>
+                            <option>Benzin</option>
+                            <option>Plin</option>
+                            <option>Hibrid</option>
+                            <option>Elektricni</option>
+                        </select>
+                    </div>
                 </div>
             </form>
         </div>
