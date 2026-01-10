@@ -77,6 +77,9 @@ export default function CreateCar() {
                     <div className="col-md-4">
                         <input type="number" name="year" placeholder="Godiste" value={form.year} onChange={handleChange} />
                     </div>
+                    <div className="col-md-4">
+                        <input type="number" name="price" placeholder="Cena" value={form.price} onChange={handleChange} />
+                    </div>
                 </div>
             </form>
         </div>
