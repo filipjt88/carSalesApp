@@ -22,7 +22,7 @@ export default function CreateCar() {
     const [error, setError] = useState("");
 
     const handleChange = (e) => {
-        setForm({...form, [e.target.name]: e.target.value});
+        setForm({ ...form, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = async (e) => {
@@ -38,7 +38,7 @@ export default function CreateCar() {
 
         try {
             const res = await axios.post(API_URL, formData);
-            if(res.data.success) {
+            if (res.data.success) {
                 setSuccess("Oglas je uspesno dodat!");
                 setForm({
                     brand: "",
@@ -54,7 +54,7 @@ export default function CreateCar() {
                 });
                 setImage(null);
             }
-        } catch(err) {
+        } catch (err) {
             setError("Greska, nije dodat oglas!");
         }
     };
@@ -63,16 +63,19 @@ export default function CreateCar() {
         <div className="container mt-5" style={{ maxWidth: 700 }}>
             <h3 className="text-center mb-4">Dodaj novi oglas</h3>
 
-            {success && <div className="alert alert-success"> { success } </div>}
-            {error && <div className="alert alert-danger"> { error } </div>}
+            {success && <div className="alert alert-success"> {success} </div>}
+            {error && <div className="alert alert-danger"> {error} </div>}
 
             <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="row g-3">
                     <div className="col-md-6">
-                        <input className="form-control" name="brand" placeholder="Marka" value={form.brand} onChange={handleChange}/>
+                        <input className="form-control" name="brand" placeholder="Marka" value={form.brand} onChange={handleChange} />
                     </div>
                     <div className="col-md-6">
-                        <input className="form-control" name="model" placeholder="Model" value={form.model} onChange={handleChange}/>
+                        <input className="form-control" name="model" placeholder="Model" value={form.model} onChange={handleChange} />
+                    </div>
+                    <div className="col-md-4">
+                        <input type="number" name="year" placeholder="Godiste" value={form.year} onChange={handleChange} />
                     </div>
                 </div>
             </form>
