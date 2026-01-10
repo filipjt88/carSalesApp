@@ -58,4 +58,13 @@ export default function CreateCar() {
             setError("Greska, nije dodat oglas!");
         }
     };
+
+    return (
+        <div className="container mt-5" style={{ maxWidth: 700 }}>
+            <h3 className="text-center mb-4">Dodaj novi oglas</h3>
+
+            {success && <div className="alert alert-success"> { success } </div>}
+            {error && <div className="alert alert-danger"> { error } </div>}
+        </div>
+    )
 }
