@@ -80,6 +80,9 @@ export default function CreateCar() {
                     <div className="col-md-4">
                         <input type="number" name="price" placeholder="Cena" value={form.price} onChange={handleChange} />
                     </div>
+                     <div className="col-md-4">
+                        <input type="number" name="km" placeholder="Kilometraza" value={form.km} onChange={handleChange} />
+                    </div>
                 </div>
             </form>
         </div>
