@@ -71,6 +71,9 @@ export default function CreateCar() {
                     <div className="col-md-6">
                         <input className="form-control" name="brand" placeholder="Marka" value={form.brand} onChange={handleChange}/>
                     </div>
+                    <div className="col-md-6">
+                        <input className="form-control" name="model" placeholder="Model" value={form.model} onChange={handleChange}/>
+                    </div>
                 </div>
             </form>
         </div>
