@@ -108,6 +108,9 @@ export default function CreateCar() {
                     <div className="col-12">
                         <textarea className="form-control" rows="4" name="description" placeholder="Opis vozila" value={form.description} onChange={handleChange}/>
                     </div>
+                    <div className="col-12">
+                        <input type="file" className="form-control" onChange={e => setImage(e.target.files[0])} required />
+                    </div>
                 </div>
             </form>
         </div>
