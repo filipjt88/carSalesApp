@@ -93,8 +93,17 @@ export default function CreateCar() {
                             <option>Elektricni</option>
                         </select>
                     </div>
+                    <div className="col-md-6">
+                        <select className="form-select" name="body" value={form.body} onChange={handleChange}>
+                            <option value="">Karoserija</option>
+                            <option>Limuzina</option>
+                            <option>Karavan</option>
+                            <option>SUV</option>
+                            <option>Hecbek</option>
+                        </select>
+                    </div>
                 </div>
             </form>
         </div>
     )
-}
+}   
