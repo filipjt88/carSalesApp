@@ -38,6 +38,7 @@ export default function Home() {
                     <CarCard key={car.id} car={car} />
                 ))}
             </div>
+            
             {/* Paginacija */}
                 {totalPages > 1 && (
                     <nav className="d-flex justify-content-center mt-4">
