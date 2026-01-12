@@ -5,6 +5,7 @@ import axios from "axios";
 const API = "http://localhost/carSalaesApp/backend/api/car.php";
 const IMG = "http://localhost/carSalesApp/backend/uploads/";
 
+
 export default function CarDetails() {
     const { id } = useParams();
     const [car, setCar] = useState(null);
