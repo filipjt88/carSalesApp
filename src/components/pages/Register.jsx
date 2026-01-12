@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+// Register API
 const API = "http://localhost/carSalesApp/backend/api/register.php";
 
 export default function Register() {
