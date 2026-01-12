@@ -33,6 +33,7 @@ if(!$brand || !$model || !$price) {
 // Insert to db
 $stmt = $pdo->prepare("INSERT INTO cars(user_id, brand, model, year, price, km, fuel, gearbox, body, city, description) VALUES (:user_id, :brand, :model, :year, :price, :km, :fuel, :gearbox, :body, :city, :description)");
 
+// Statement execute
 $stmt->execute([
     ":user_id" => $user_id,
     ":brand"   => $brand,
