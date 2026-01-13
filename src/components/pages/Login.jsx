@@ -50,6 +50,7 @@ export default function Login() {
                         </div>
                     )}
 
+                    {/* Login form */}
                     <form onSubmit={submit}>
                         <div className="mb-3">
                             {/* Email */}
