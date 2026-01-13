@@ -29,6 +29,7 @@ export default function SearchBox({ cars = [], OnSearch }) {
     return (
         <div className="card shadow-sm mb-4">
             <div className="card-body">
+                {/* Submit form */}
                 <form onSubmit={submit}>
                     <div className="row g-3">
                         <div className="col-md-3">
