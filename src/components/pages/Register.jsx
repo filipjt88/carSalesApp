@@ -24,6 +24,7 @@ export default function Register() {
         <div className="container mt-5" style={{ maxWidth: 400}}>
             <h3 className="mb-3">Register</h3>
             {error && <div className="alert alert-danger">{error}</div>}
+            {/* Register form */}
             <form onSubmit={submit}>
                 <input className="form-control mb-3" placeholder="Name" onChange={e => setForm({ ...form, email: e.target.value })} />
                 <input className="form-control mb-3" placeholder="Email" onChange={e => setForm({ ...form, email: e.target.value })} />
