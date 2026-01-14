@@ -22,8 +22,8 @@ export default function Home() {
             fetchCars();
         }, []);
 
-        const totalPages = Math.ceil(cars.length / PER_PAGE);
-        const start = (page - 1) * PER_PAGE;
+        const totalPages  = Math.ceil(cars.length / PER_PAGE);
+        const start       = (page - 1) * PER_PAGE;
         const currentCars = cars.slice(start, start + PER_PAGE);
 
     return (
