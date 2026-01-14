@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
+// Api and img url
 const API = "http://localhost/carSalaesApp/backend/api/car.php";
 const IMG = "http://localhost/carSalesApp/backend/uploads/";
 
