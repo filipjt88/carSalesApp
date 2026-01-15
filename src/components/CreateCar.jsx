@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
+// Api url car create
 const API_URL = "http://localhost/carSalesApp/backend/api/car_create.php";
 
 export default function CreateCar() {
