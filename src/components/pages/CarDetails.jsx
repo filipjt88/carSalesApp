@@ -46,11 +46,9 @@ return (
         </div>
 
         {/* Podaci */}
-
         <div className="col-md-5">
             <h3>{car.brand} {car.model}</h3>
             <h4 className="text-primary mb-3">{car.price} €</h4>
-
             <ul className="list-group mb-3">
                 <li className="list-group-item">Godiste: {car.year}</li>
                 <li className="list-group-item">Kilometraza: {car.km}</li>
@@ -61,7 +59,6 @@ return (
             <p>{car.description}</p>
         </div>
     </div>
-
         {/* Lightbox  */}
         {lightBoxOpen && (
             <div className="position-fixed top-0 start-0 w-100 d-flex justify-content-center align-items-center" style={{background:"rgba(0,0,0,0.80)", zIndex:9999}} onClick={() => setLightBoxOpen(false)}>
