@@ -5,7 +5,6 @@ export default function CarCard({ car }) {
   return (
     <div className="col-md-4 mb-4">
       <div className="card h-100 shadow-sm">
-
         <img src={`http://localhost/carSalesApp/backend/uploads/${car.image}`} className="card-img-top"
           style={{ height: 200, objectFit: "cover" }}/>
         <div className="card-body">
@@ -20,7 +19,6 @@ export default function CarCard({ car }) {
             Pogledaj oglas
           </Link>
         </div>
-
       </div>
     </div>
   );
