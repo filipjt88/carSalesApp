@@ -9,9 +9,9 @@ const IMG = "http://localhost/carSalesApp/backend/uploads/";
 
 export default function CarDetails() {
     // Setup
-    const { id } = useParams();
+    const { id }        = useParams();
     const [car, setCar] = useState(null);
-    const [mainImage, setMainImage] = useState("");
+    const [mainImage, setMainImage]       = useState("");
     const [lightBoxOpen, setLightBoxOpen] = useState(false);
 
     useEffect(() => {
