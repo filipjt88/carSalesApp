@@ -8,10 +8,10 @@ export default function CreateCar() {
     const [form, setForm] = useState({
         brand: "",
         model: "",
-        year: "",
+        year:  "",
         price: "",
-        km: "",
-        fuel: "",
+        km:    "",
+        fuel:  "",
         gearbox: "",
         body: "",
         city: "",
@@ -56,7 +56,7 @@ export default function CreateCar() {
                 setImage(null);
             }
         } catch (err) {
-            setError("Greska, nije dodat oglas!");
+            setError("Greska, nije kreiran oglas!");
         }
     };
 
