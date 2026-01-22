@@ -8,7 +8,7 @@ const API = "http://localhost/carSalesApp/backend/api/login.php";
 
 export default function Login() {
     const { login } = useContext(AuthContext);
-    const navigate = useNavigate();
+    const navigate  = useNavigate();
 
     const [email, setEmail]       = useState("");
     const [password, setPassword] = useState("");
