@@ -15,9 +15,7 @@ export default function CarCard({ car }) {
           </small>
         </div>
         <div className="card-footer bg-white border-0">
-          <Link to={`/cars/${car.id}`} className="btn btn-outline-primary w-100">
-            Pogledaj oglas
-          </Link>
+          <Link to={`/cars/${car.id}`} className="btn btn-outline-primary w-100">Pogledaj oglas</Link>
         </div>
       </div>
     </div>
