@@ -7,7 +7,7 @@
 
 * Pretraga i filtriranje (marka, model, gorivo, cena, godište)
 
-* Pagination
+* Paginacija
 
 * Prikaz glavne slike automobila
 
