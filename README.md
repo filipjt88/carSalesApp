@@ -1,7 +1,7 @@
 ********** Car Sales App je web aplikacija za pregled, pretragu i prikaz oglasa automobila. *******
 ********** Aplikacija je podeljena na frontend (React) i backend (PHP + MySQL). *************
 
-- Funkcionalnosti
+---------- Funkcionalnosti --------------
 
 * Prikaz liste automobila
 
