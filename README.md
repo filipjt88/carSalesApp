@@ -15,7 +15,7 @@
 
 Tehnologije
 
-- Frontend
+************ Frontend ************
 
 * React
 
@@ -23,7 +23,7 @@ Tehnologije
 
 * Vite
 
-- Backend
+*********** Backend ***************
 
 * PHP
 
