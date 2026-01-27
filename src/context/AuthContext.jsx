@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 
+// Autentikacija
 export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
