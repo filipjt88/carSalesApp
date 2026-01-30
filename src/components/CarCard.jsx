@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../App.css";
 
+// Card
 export default function CarCard({ car }) {
   return (
     <div className="col-md-4 mb-4">
