@@ -8,6 +8,7 @@ export default function Header() {
                 <Link to="/" className="navbar-brand fw-world">
                 <h4 className="display-1 text-center">Prodaja polovnih automobila <i className="fa-solid fa-car car"></i></h4>
                 </Link>
+                {/* Form */}
                 <form className="d-flex ms-auto" style={{maxWidth:"400px"}}>
                     <input className="form-control me-2" type="search" placeholder="Pretrazi..." />
                     <button className="btn btn-outline-light" type="submit">Pretrazi</button>
