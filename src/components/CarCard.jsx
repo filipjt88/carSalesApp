@@ -12,7 +12,7 @@ export default function CarCard({ car }) {
           <h5>{car.brand} {car.model}</h5>
           <p className="mb-1"><b>{car.price} €</b></p>
           <small className="text-muted">
-            {car.year} * {car.km} km • {car.fuel}
+            {car.year} * {car.km} km * {car.fuel}
           </small>
         </div>
         <div className="card-footer bg-white border-0">
