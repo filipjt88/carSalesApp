@@ -2,6 +2,7 @@
 
 header("Content-Type: application/json; charset=UTF-8");
 
+
 // localhost podadci
 $host = 'localhost';
 $db   = 'car_sales';
