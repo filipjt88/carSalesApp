@@ -9,6 +9,7 @@ $db   = 'car_sales';
 $user = 'root';
 $pass = '';
 
+// PDO
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $user, $pass, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
