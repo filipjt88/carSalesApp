@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import "../App.css";
 
+
 // Car card oglas
 export default function CarCard({ car }) {
   return (
     <div className="col-md-4 mb-4">
       <div className="card h-100 shadow-sm">
         <img src={`http://localhost/carSalesApp/backend/uploads/${car.image}`} className="card-img-top"
-          style={{ height: 250, objectFit: "cover" }}/>
+          style={{ height: 300, objectFit: "cover" }}/>
         <div className="card-body">
           <h5>{car.brand} {car.model}</h5>
           <p className="mb-1"> <b>{car.price} €</b> </p>
