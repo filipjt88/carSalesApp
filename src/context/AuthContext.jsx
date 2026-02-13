@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 // Autentikacija
 export const AuthContext = createContext();
 
+
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(
         JSON.parse(localStorage.getItem("user"))
