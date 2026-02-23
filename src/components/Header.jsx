@@ -6,7 +6,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
                 <Link to="/" className="navbar-brand fw-world">
-                <h4 className="display-1 text-center">Prodaja polovnih automobila <i className="fa-solid fa-car car"></i></h4>
+                <h4 className="display-1 text-center">Prodaja automobila <i className="fa-solid fa-car car"></i></h4>
                 </Link>
                 {/* Form */}
                 <form className="d-flex ms-auto" style={{maxWidth:"450px"}}>
