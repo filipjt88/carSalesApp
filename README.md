@@ -15,7 +15,7 @@
 
 Tehnologije
 
-************ Frontend ************
+*********** Frontend ***********
 
 * React
 
